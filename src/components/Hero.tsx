@@ -4,7 +4,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
-    <div className="relative min-h-screen flex items-center overflow-hidden">
+    <div className="relative  flex  overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
@@ -17,7 +17,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto  text-center px-4 sm:px-6 lg:px-8 py-32 mt-10 ">
+      <div className="relative z-10 mx-auto  text-center px-4 sm:px-6 lg:px-8 py-20 mt-20 mb-20">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -104,7 +104,6 @@ export function Hero() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
     </div>
   );
 }
